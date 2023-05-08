@@ -6,7 +6,7 @@ let result = document.getElementById("result");
 
 let getMovie = () => {
   let movieName = movieNameRef.value;
-  let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+  let url = `HTTPS://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
   // if inoput field is empty
 
   if (movieName.length <= 0) {
@@ -15,7 +15,9 @@ let getMovie = () => {
 
   //if input isnt empty
   else {
-    fetch(url).then((resp) => resp.json()).then((data) => {
+    fetch(url)
+      .then((resp) => resp.json())
+      .then((data) => {
         //if movie exists in database
         if (data.Response == "True") {
           result.innerHTML = `
@@ -65,5 +67,5 @@ let getMovie = () => {
   }
 };
 
-searchBtn.addEventListener("click", getMovie);
+searchBtn.addEventListener("keyup", getMovie);
 window.addEventListener("load", getMovie);
