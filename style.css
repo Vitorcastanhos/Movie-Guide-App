@@ -46,7 +46,7 @@ body {
 }
 
 .search-container input:focus {
-  border-color: #fff;
+  border-color: #2aff6a;
 }
 
 .search-container button {
@@ -109,10 +109,11 @@ h2 {
 .genre {
   display: flex;
   justify-content: space-around;
+  margin: 1rem;
 }
 
 .genre div {
-  border: 1px solid #a0a0a0;
+  border: 1px solid #2aff6a;
   font-size: 0.75rem;
   padding: 0.4rem 1.6rem;
   border-radius: 0.4rem;
@@ -137,8 +138,16 @@ p {
 }
 
 /* ==================== MEdia Queries =============================================*/
+@media screen and (max-width: 1140px) {
+  .genre {
+    display: grid;
+    gap: 1rem;
+  }
+}
 
-@media screen and (max-width: 600px) {
+/* ==================== MEdia Queries =============================================*/
+
+@media screen and (max-width: 576px) {
   .container {
     width: 98%;
     font-size: 1.4rem;
@@ -181,7 +190,7 @@ p {
     margin-top: 0.5rem;
     padding: 0.7rem;
   }
-  
+
   .poster {
     margin: auto;
     width: auto;
@@ -215,11 +224,10 @@ p {
     display: grid;
     justify-content: space-around;
     gap: 0.5rem;
-    /* justify-content: space-around; */
   }
 
   .genre div {
-    border: 1px solid #a0a0a0;
+    border: 1px solid #2aff6a;
     font-size: 0.75rem;
     padding: 0.4rem 1.6rem;
     border-radius: 0.4rem;
