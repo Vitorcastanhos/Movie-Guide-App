@@ -109,14 +109,14 @@ h2 {
 .genre {
   display: flex;
   justify-content: space-around;
-  margin: 3rem;
+  margin: 1rem;
 }
 
 .genre div {
   border: 1px solid #2aff6a;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 800;
-  padding: 2rem 2rem;
+  padding: 0.8rem 0.8rem;
   border-radius: 1rem;
 }
 
