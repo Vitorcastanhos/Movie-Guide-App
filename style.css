@@ -40,7 +40,7 @@ body {
 
 .search-container input {
   background-color: transparent;
-  border: 1px solid #a0a0a0;
+  border: 1px solid #fff ;
   color: #fff;
   padding-left: 0.5rem;
 }
@@ -109,15 +109,15 @@ h2 {
 .genre {
   display: flex;
   justify-content: space-around;
-  margin: 1rem;
+  margin: 3rem;
 }
 
 .genre div {
   border: 1px solid #2aff6a;
-  font-size: 0.75rem;
-  padding: 0.4rem 1.6rem;
-  border-radius: 0.4rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
 }
 
 h3 {
