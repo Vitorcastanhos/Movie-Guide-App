@@ -16,7 +16,7 @@ body {
   font-size: 2rem;
   width: auto;
   padding: 3rem 1rem;
-  background-color: #1e293b;
+  background-color: #263855;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -42,7 +42,7 @@ body {
   background-color: transparent;
   border: 1px solid #a0a0a0;
   color: #fff;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 .search-container input:focus {
@@ -136,17 +136,106 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 1028px) {
+/* ==================== MEdia Queries =============================================*/
+
+@media screen and (max-width: 600px) {
   .container {
+    width: 98%;
     font-size: 1.4rem;
+    padding: 0.8rem;
+    background-color: #263855;
+    box-shadow: 1.2rem 2rem 3rem rgba(0, 0, 0, 0.4);
   }
+
+  .search-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .search-container input,
+  .search-container button {
+    width: 100%;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+  }
+
+  .search-container input {
+    background-color: transparent;
+    border: 0.5px solid #a0a0a0;
+    color: #fff;
+  }
+
+  .search-container input:focus {
+    border-color: #2aff6a;
+  }
+
+  .search-container button {
+    background-color: #2aff6a;
+    border: none;
+    cursor: pointer;
+  }
+
+  #search-btn,
+  #movie-name {
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+  }
+  
   .poster {
     margin: auto;
     width: auto;
-    max-height: 10.8rem;
+    max-height: 12rem;
   }
 
   .info {
-    grid-template-columns: 1fr;
+    margin: 0.5rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .details {
+    display: grid;
+    color: #a0a0a0;
+    font-weight: 500;
+  }
+
+  .genre {
+    display: grid;
+    justify-content: space-around;
+    gap: 0.5rem;
+    /* justify-content: space-around; */
+  }
+
+  .genre div {
+    border: 1px solid #a0a0a0;
+    font-size: 0.75rem;
+    padding: 0.4rem 1.6rem;
+    border-radius: 0.4rem;
+    font-weight: 300;
+  }
+
+  h3 {
+    font-weight: 500;
+    margin-top: 0.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #a0a0a0;
   }
 }
